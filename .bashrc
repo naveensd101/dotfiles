@@ -118,7 +118,7 @@ fi
 
 # all of my changes
 alias pathcp="cd ~/naveen/personal/cs/cp/"
-alias setcp="rm soln.cpp in.txt makefile ; cp ~/naveen/personal/cs/cp/templates/soln.cpp . && cp ~/naveen/personal/cs/cp/templates/makefile . && nvim soln.cpp in.txt -p"
+alias setcp="rm soln.cpp in.txt makefile ; cp ~/naveen/personal/cs/cp/templates/soln.cpp . && cp ~/naveen/personal/cs/cp/templates/makefile . && touch in.txt && nvim soln.cpp in.txt -p"
 alias cont="nvim soln.cpp in.txt -p"
 PROMPT_DIRTRIM=3
 
