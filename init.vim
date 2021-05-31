@@ -57,3 +57,5 @@ let g:gruvbox_italic = 1
 "let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme = 'gruvbox'
 
+let g:cphdir='~/naveen/personal/cs/cp/contests'
+
