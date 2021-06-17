@@ -16,14 +16,6 @@ set path+=/home/n_sd/naveen/personal/cs/cp/templates
 set termguicolors
 
 
-"saving folds
-"augroup remember_folds
-"  autocmd!
-"  autocmd BufWinLeave * mkview
-"  autocmd BufWinEnter * silent! loadview
-"augroup END
-"autocmd BufWinLeave *.* mkview
-"autocmd BufWinEnter *.* silent loadview
 
 "available stuff <F2><F3><F4><F5><F6><F7><F9><F12>
 nnoremap <F2> <Esc>:Vexp ~/naveen/personal/cs/cp/templates/<CR>
@@ -43,19 +35,18 @@ Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'morhetz/gruvbox'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'nvim-lua/plenary.nvim'
 
 call plug#end()
 
-" colorscheme monokai
-" let g:monokai_term_italic = 1
-" let g:monokai_gui_italic = 1
+colorscheme monokai
+let g:monokai_term_italic = 1
+let g:monokai_gui_italic = 1
 
-colorscheme gruvbox
-let g:gruvbox_bold = 1
-let g:gruvbox_italic = 1
-"let g:airline#extensions#tabline#enabled = 1
-let g:airline_theme = 'gruvbox'
+" colorscheme gruvbox
+" let g:gruvbox_bold = 1
+" let g:gruvbox_italic = 1
+" let g:airline#extensions#tabline#enabled = 1
+" let g:airline_theme = 'gruvbox'
 
-let g:cphdir='~/naveen/personal/cs/cp/contests'
+" let g:cphdir='~/naveen/personal/cs/cp/contests'
 
