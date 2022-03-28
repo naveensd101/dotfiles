@@ -14,25 +14,30 @@ set belloff=all
 set shiftwidth=4
 set splitright
 set path+=**
+set clipboard+=unnamedplus
+" Install xclip if clipboard is not working
+
 
 let mapleader = " "
 nnoremap <Leader>f <Esc>$v%zf
 nnoremap <Leader>a <Esc>za
-nnoremap <Leader>j <Esc>gt<Esc>:%d<CR><Esc>"+P<CR><Esc>:w<CR><Esc>gt
+"nnoremap <Leader>j <Esc>gt<Esc>:%d<CR><Esc>"+P<CR><Esc>:w<CR><Esc>gt
+nnoremap <Leader>j <Esc>gt<Esc>gg<Esc>VG"+P<Esc>:w<CR><Esc>gt
 nnoremap <Leader><Tab> <Esc>gt
 nnoremap <Leader>d <Esc>$V%d<Esc>
 nnoremap <Leader>e <Esc>:e #<Esc>
 
-set path+=/home/n_sd/naveen/personal/cs/cp/templates
-nnoremap <F2> <Esc>:Exp <CR>
-inoremap <F2> <Esc>:Exp <CR>
+set path+=/home/naveen/naveen/personal/cs/cp/templates
+nnoremap <F2> <Esc>:Vexp /home/naveen/naveen/personal/cs/cp/templates<CR>
 
 call plug#begin('~/.vim/plugged')
-"Plug 'octol/vim-cpp-enhanced-highlight'
-"Plug 'morhetz/gruvbox'
+Plug 'octol/vim-cpp-enhanced-highlight'
+Plug 'morhetz/gruvbox'
 "" Plug 'happycoder97/expos-vim-plugins'
 "" Plug 'searleser97/cpbooster.vim'
-Plug 'naveensd101/expos-vim-plugins'
+Plug 'github/copilot.vim'
+"" Plug 'naveensd101/expos-vim-plugins'
+Plug 'sheerun/vim-polyglot'
 call plug#end()
 
 let g:cpp_class_scope_highlight = 1
@@ -44,5 +49,6 @@ let g:cpp_experimental_template_highlight = 1
 let g:cpp_concepts_highlight = 1
 let g:cpp_no_function_highlight = 1
 
-" colorscheme gruvbox
+colorscheme gruvbox
+
 
